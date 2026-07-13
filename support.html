@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Help, gameplay instructions, and contact information for Trash Talk Solitaire.">
+    <meta name="theme-color" content="#0b4a27">
+    <title>Support — Trash Talk Solitaire</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --felt: #0b4a27;
+            --felt-dark: #052b17;
+            --cream: #fffaf0;
+            --ink: #17231b;
+            --muted: #5d6b62;
+            --gold: #f1c84b;
+            --line: #dce5de;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: #f4f7f4;
+            font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        header {
+            color: white;
+            background: linear-gradient(145deg, var(--felt), var(--felt-dark));
+            padding: 48px 20px 42px;
+        }
+        .header-inner, main, footer { width: min(760px, calc(100% - 40px)); margin: 0 auto; }
+        .brand { display: flex; align-items: center; gap: 14px; }
+        .mark {
+            display: grid;
+            width: 52px;
+            height: 52px;
+            place-items: center;
+            border: 2px solid rgba(255,255,255,.72);
+            border-radius: 13px;
+            background: rgba(255,255,255,.1);
+            color: var(--gold);
+            font-size: 25px;
+            font-weight: 800;
+        }
+        h1 { margin: 0; font-size: clamp(30px, 6vw, 46px); line-height: 1.05; letter-spacing: -.03em; }
+        .tagline { margin: 13px 0 0; color: rgba(255,255,255,.76); }
+        main { padding: 38px 0 60px; }
+        section {
+            margin: 0 0 22px;
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: white;
+            box-shadow: 0 8px 28px rgba(19, 55, 32, .06);
+        }
+        h2 { margin: 0 0 12px; color: var(--felt); font-size: 22px; }
+        h3 { margin: 20px 0 5px; font-size: 16px; }
+        p { margin: 8px 0; }
+        ul { margin: 8px 0 0; padding-left: 22px; }
+        li + li { margin-top: 7px; }
+        a { color: #0867c8; font-weight: 600; }
+        .contact {
+            color: white;
+            border-color: transparent;
+            background: linear-gradient(145deg, var(--felt), var(--felt-dark));
+        }
+        .contact h2 { color: white; }
+        .contact a { color: #ffe07c; }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 24px 0 40px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        footer nav { display: flex; gap: 16px; }
+        @media (max-width: 560px) {
+            header { padding-top: 34px; }
+            section { padding: 20px; }
+            footer { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="mark" aria-hidden="true">A♠</div>
+                <div>
+                    <h1>Trash Talk Solitaire</h1>
+                    <p class="tagline">Classic Klondike. Unsolicited opinions.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>How to play</h2>
+            <p>Move all 52 cards to the four foundation piles, sorted by suit from Ace through King.</p>
+            <ul>
+                <li><strong>Draw:</strong> Tap the stock pile at top left. Tap its ×1/×3 badge to switch Draw mode.</li>
+                <li><strong>Move:</strong> Tap a face-up card and then its destination, or drag it directly.</li>
+                <li><strong>Build the tableau:</strong> Stack downward in alternating red and black suits.</li>
+                <li><strong>Use empty columns:</strong> Only a King, with any cards attached to it, may fill an empty column.</li>
+                <li><strong>Send cards home:</strong> Double-tap a playable card to move it to a foundation.</li>
+                <li><strong>Get help:</strong> Tap the lightbulb for a useful move. Tap the back arrow to undo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Modes and scoring</h2>
+            <h3>Draw 1 and Draw 3</h3>
+            <p>Draw 1 exposes one stock card at a time. Draw 3 exposes cards in groups of three and is usually more challenging.</p>
+
+            <h3>Deal difficulty</h3>
+            <p>Easy favors early access to lower cards. Medium keeps the classic feel while periodically choosing a solver-verified friendly deal. Hard creates a more punishing deal. A new difficulty applies to the next deal.</p>
+
+            <h3>Vegas scoring</h3>
+            <p>Vegas mode uses fictional dollars only. A hand begins at −$52 and earns $5 for each card moved to a foundation. Starting a new hand before finishing records the current hand as abandoned. There is no real money, purchase, prize, or cash-out.</p>
+        </section>
+
+        <section>
+            <h2>Voice, sounds, and haptics</h2>
+            <p>The butler's visible commentary works offline and remains on screen when speech is muted.</p>
+            <ul>
+                <li><strong>Spoken Commentary:</strong> Turns the on-device British voice on or off.</li>
+                <li><strong>Speech Rate:</strong> Changes how quickly the butler speaks.</li>
+                <li><strong>Test Voice:</strong> Plays a short sample using the current rate.</li>
+                <li><strong>Sound Effects:</strong> Controls card and celebration sounds separately.</li>
+                <li><strong>Haptics:</strong> Controls tactile card, hint, warning, and achievement feedback.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frequently asked questions</h2>
+            <h3>Does the game need an account or internet connection?</h3>
+            <p>No. Gameplay, commentary, speech, statistics, and achievements work without an account or app-initiated network connection.</p>
+
+            <h3>Does the game collect my data?</h3>
+            <p>No. Preferences, aggregate statistics, and achievements stay in the app's local storage. Read the dedicated <a href="privacy.html">privacy policy</a>.</p>
+
+            <h3>Will my current hand return after I terminate the app?</h3>
+            <p>Yes. The active deal and its undo history are saved locally so the hand can resume on the same device.</p>
+
+            <h3>How do I reset my statistics?</h3>
+            <p>Open Settings, scroll to Statistics, and choose Reset Stats. This also clears local achievements.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Trash Talk Solitaire support</h2>
+            <p>For a question, bug report, or accessibility issue, email <a href="mailto:hello@tinroof.ai">hello@tinroof.ai</a>.</p>
+            <p>Please include your device model, iOS version, what you expected, and what happened. Never include passwords or sensitive personal information.</p>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 405 Capital LLC</span>
+        <nav aria-label="Legal and support">
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html" aria-current="page">Support</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>
